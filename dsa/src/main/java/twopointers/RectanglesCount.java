@@ -15,22 +15,19 @@ Problem Constraints
  */
 package twopointers;
 
+import java.util.ArrayList;
+
 public class RectanglesCount {
-    private static long M=(long)1e9+7;
-
-    public int solve(int[] A, int B) {
-        int left=0,right=A.length-1;
-        long count=0;
-        while(left<=right) {
-            long area=(long)A[left]*A[right];
-            if(area<B) {
-                count+=2*(right-left)+1;
-                left++;
-            } else {
-                right--;
-            }
+    public int solve(ArrayList< Integer > A, int B) {
+        long ans = 0, mod = (long)(1000000000 + 7);
+        int l = 0, r = A.size() - 1;
+        while (l < A.size() && r >= 0) {
+            if ((long) A.get(l) * A.get(r) < B) {
+                // A[l] can form rectangles with any of A[0..r]
+                ans = (ans + r + 1) % mod;
+                l++;
+            } else r--;
         }
-
-        return (int)(count%M);
+        return (int) ans;
     }
 }
