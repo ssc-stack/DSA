@@ -17,35 +17,37 @@ package linkedlist;
 
 public class ReverseBetween {
     public ListNode reverseBetween(ListNode A, int B, int C) {
-        int s=1;
-
+        ListNode prev=null;
         ListNode itr=A;
-
-        if(B==C) return A;
-
-        while(s<B-1) {
+        for(int i=1;i<B;++i) {
+            prev=itr;
             itr=itr.next;
-            s++;
         }
 
-        ListNode temp=itr.next;
-        ListNode curr=itr,prev=null,next=null;
-        while(curr!=null && s<=C) {
+        if(prev!=null) {
+            prev.next=reverseList(itr,C-B+1);
+        } else {
+            A=reverseList(itr,C-B+1);
+        }
+
+        return A;
+    }
+
+    public ListNode reverseList(ListNode A,int count) {
+
+        if(A==null) return A;
+
+        ListNode curr=A,prev=null,next=null;
+        ListNode last=A;
+
+        while(curr!=null && count>0) {
             next=curr.next;
             curr.next=prev;
             prev=curr;
             curr=next;
-            s++;
+            count--;
         }
-
-        if(B==1) {
-            A.next=curr;
-            return prev;
-        }
-        itr.next=prev;
-        temp.next=curr;
-
-
-        return A;
+        last.next=curr;
+        return prev;
     }
 }
