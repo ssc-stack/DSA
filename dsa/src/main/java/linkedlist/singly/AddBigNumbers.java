@@ -13,7 +13,7 @@ Problem Constraints
 
 1 <= |A|, |B| <= 105
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class AddBigNumbers {
     public ListNode addTwoNumbers(ListNode A, ListNode B) {

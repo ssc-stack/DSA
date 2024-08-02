@@ -10,7 +10,7 @@ public int solve(ListNode A) {
         return slow.val;
     }
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class MidOfList {
     public int solve(ListNode A) {

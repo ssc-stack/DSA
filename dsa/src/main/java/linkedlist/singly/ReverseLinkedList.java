@@ -16,7 +16,7 @@ Value of each node is within the range of a 32-bit integer.
 
 
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class ReverseLinkedList {
     public ListNode reverseList(ListNode A) {

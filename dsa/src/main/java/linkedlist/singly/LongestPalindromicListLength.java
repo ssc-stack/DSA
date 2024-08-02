@@ -15,7 +15,7 @@ Problem Constraints
 
 1 <= Node value <= 100
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class LongestPalindromicListLength {
     private static int countCommon(ListNode f,ListNode s) {

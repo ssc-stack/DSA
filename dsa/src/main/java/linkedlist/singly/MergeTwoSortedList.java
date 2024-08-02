@@ -11,7 +11,7 @@ Problem Constraints
 
 0 <= |A|, |B| <= 105
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class MergeTwoSortedList {
     public ListNode mergeTwoLists(ListNode A, ListNode B) {

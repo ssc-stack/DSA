@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.singly;
 
 public class PrintLinkedList {
     public void solve(ListNode A) {

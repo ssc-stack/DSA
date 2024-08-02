@@ -9,7 +9,7 @@ Problem Constraints
 
 0 <= |A| = 105
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class MergeSortOnLinkedList {
     private static ListNode getMid(ListNode head) {

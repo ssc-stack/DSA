@@ -9,7 +9,7 @@ Problem Constraints
 
 1 <= |A| <= 105
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class PalindromicList {
     public ListNode reverse(ListNode head) {

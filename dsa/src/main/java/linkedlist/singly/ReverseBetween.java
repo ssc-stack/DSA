@@ -13,7 +13,7 @@ Problem Constraints
 
 1 <= B <= C <= |A|
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class ReverseBetween {
     public ListNode reverseBetween(ListNode A, int B, int C) {

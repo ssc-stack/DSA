@@ -10,7 +10,7 @@ Problem Constraints
 0 <= length of linked list <= 106
  */
 
-package linkedlist;
+package linkedlist.singly;
 
 public class RemoveDuplicates {
     public ListNode deleteDuplicates(ListNode A) {

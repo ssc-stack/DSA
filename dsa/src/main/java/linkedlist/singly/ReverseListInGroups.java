@@ -11,7 +11,7 @@ Problem Constraints
 
 B always divides A
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class ReverseListInGroups {
     private static ListNode getKthNode(ListNode head,int K) {

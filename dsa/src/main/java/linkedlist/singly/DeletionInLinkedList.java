@@ -13,7 +13,7 @@ Problem Constraints
 1 <= value of nodes <= 109
 0 <= B < size of linked list
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class DeletionInLinkedList {
     public ListNode solve(ListNode A, int B) {

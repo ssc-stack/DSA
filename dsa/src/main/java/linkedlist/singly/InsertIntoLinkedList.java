@@ -21,7 +21,7 @@ Problem Constraints
 
 0 <= C <= 105
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class InsertIntoLinkedList {
     public ListNode solve(ListNode A, int B, int C) {

@@ -11,7 +11,7 @@ Problem Constraints
 
 1 <= number of nodes <= 1000
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class RemoveLoop {
     public ListNode solve(ListNode A) {

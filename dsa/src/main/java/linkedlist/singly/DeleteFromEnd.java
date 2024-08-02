@@ -18,7 +18,7 @@ Problem Constraints
 
  */
 
-package linkedlist;
+package linkedlist.singly;
 
 public class DeleteFromEnd {
     public ListNode removeNthFromEnd(ListNode A, int B) {

@@ -11,7 +11,7 @@ Problem Constraints
 
 1 <= |A| <= 106
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class SwapInPairs {
     public ListNode swapPairs(ListNode A) {

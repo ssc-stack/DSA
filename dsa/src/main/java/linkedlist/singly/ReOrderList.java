@@ -17,7 +17,7 @@ Problem Constraints
 
 1 <= |A| <= 106
  */
-package linkedlist;
+package linkedlist.singly;
 
 public class ReOrderList {
     private static ListNode findMid(ListNode head) {
