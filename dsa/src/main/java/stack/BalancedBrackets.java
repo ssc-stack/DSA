@@ -1,3 +1,16 @@
+/*
+Problem Description
+
+Given an expression string A, examine whether the pairs and the orders of “{“,”}”, ”(“,”)”, ”[“,”]” are correct in A.
+
+Refer to the examples for more clarity.
+
+
+
+Problem Constraints
+
+1 <= |A| <= 100
+ */
 package stack;
 
 import java.util.ArrayDeque;
