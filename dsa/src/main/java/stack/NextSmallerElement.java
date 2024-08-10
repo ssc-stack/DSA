@@ -23,10 +23,8 @@ public class NextSmallerElement {
     public ArrayList<Integer> prevSmaller(ArrayList<Integer> A) {
         Deque<Integer> stack=new ArrayDeque<>();
         ArrayList<Integer> res=new ArrayList<>();
-        res.add(-1);
-        stack.push(A.get(0));
 
-        for(int i=1;i<A.size();++i) {
+        for(int i=0;i<A.size();++i) {
             while(!stack.isEmpty() && stack.peek()>=A.get(i)) {
                 stack.pop();
             }
