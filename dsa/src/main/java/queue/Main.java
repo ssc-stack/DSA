@@ -1,7 +1,8 @@
 package queue;
 
 public class Main {
-    public static void main(String[] args) {
+
+    public static void staticQueue() {
         ArrayQueue queue=new ArrayQueue(5);
         System.out.println(queue);
         try {
@@ -21,5 +22,21 @@ public class Main {
         }
 
         System.out.println(queue);
+    }
+
+    public static void dynamicQueue() {
+        DynamicQueue queue=new DynamicQueue();
+        for(int i=1;i<=10;++i) {
+            queue.enqueue(i);
+            if(i%2==0)
+                queue.dequeue();
+        }
+
+        System.out.println(queue.size());
+        System.out.println(queue);
+    }
+    public static void main(String[] args) {
+        //staticQueue();
+        dynamicQueue();
     }
 }
