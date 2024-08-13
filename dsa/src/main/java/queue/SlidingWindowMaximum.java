@@ -28,7 +28,7 @@ public class SlidingWindowMaximum {
         int[] res=new int[A.length-B+1];
         int k=0;
         for(int i=0;i<A.length;++i) {
-            if(!dq.isEmpty() && dq.peek()<=i-B) dq.pollFirst();
+            if(!dq.isEmpty() && dq.peekFirst()<=i-B) dq.pollFirst();
             while(!dq.isEmpty() && A[dq.peekLast()]<=A[i]) dq.pollLast();
             dq.offer(i);
             if(i>=B-1) res[k++]=A[dq.peek()];
