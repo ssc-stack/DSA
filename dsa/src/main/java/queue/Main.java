@@ -12,6 +12,7 @@ public class Main {
             queue.enqueue(12);
             queue.enqueue(134);
             queue.enqueue(112);
+            System.out.println(queue.size());
             queue.enqueue(122);
             queue.enqueue(16);
             queue.enqueue(14);

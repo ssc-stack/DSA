@@ -33,7 +33,10 @@ public class ArrayQueue {
         }
 
         int element=queue[front];
-        queue[front++]=0;
+        for(int i=0;i<rear;++i) {
+            queue[i]=queue[i+1];
+        }
+        rear--;
         size--;
         return element;
     }
@@ -43,7 +46,7 @@ public class ArrayQueue {
     }
 
     public boolean isFull() {
-        return size==capacity-1;
+        return size==capacity;
     }
 
     public boolean isEmpty() {
