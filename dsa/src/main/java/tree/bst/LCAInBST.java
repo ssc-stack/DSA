@@ -17,6 +17,6 @@ public class LCAInBST {
             return lowestCommonAncestor(root.right,p,q);
         }
 
-        return root; // Flound the first split point
+        return root; // Found the first split point
     }
 }
