@@ -111,7 +111,7 @@ class MyHashMap<K, V> {
         map.put("three", 3);
         map.put("four", 4);
         map.put("five", 5); // This might trigger a rehash depending on initial capacity
-
+        System.out.println("Value of null key: "+map.get(null));
         System.out.println("Value for 'one': " + map.get("one")); // Output: 1
         System.out.println("Value for 'two': " + map.get("two")); // Output: 2
         System.out.println("Value for 'five': " + map.get("five")); // Output: 5
