@@ -20,7 +20,7 @@ public class ZigZagTraversal {
         boolean flag=false;
         while(!queue.isEmpty()) {
             int size=queue.size();
-            List<Integer> list=new LinkedList<>();
+            LinkedList<Integer> list=new LinkedList<>();
             for(int i=0;i<size;++i) {
                 TreeNode node=queue.poll();
                 if(node.left!=null) queue.add(node.left);
